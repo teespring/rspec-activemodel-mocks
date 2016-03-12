@@ -55,6 +55,7 @@ module RSpec::ActiveModel::Mocks
       # Rails>4.2 uses _read_attribute internally, as an optimized
       # alternative to record['id']
       alias_method :_read_attribute, :[]
+      alias_method :read_attribute, :[]
 
       # Returns the opposite of `persisted?`
       def new_record?
